@@ -362,7 +362,7 @@ class Entrada:
         Returns:
             int: O índice do e-mail, convertido para inteiro.
         """
-        return int(self.__indice)
+        return self.__indice
 
     @property
     def comando(self) -> str | None:
