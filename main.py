@@ -57,7 +57,7 @@ def imprime_emails(buscados):
             elif comando == 'show':
                 index = entrada.indice
                 # Converte o índice exibido para o índice real na lista 'buscados'
-                real_i = inicio + index
+                real_i = inicio + index - 1
                 if 0 <= real_i < len(buscados):
                     cache.open_html(buscados[real_i])
                 else:
