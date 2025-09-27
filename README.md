@@ -47,7 +47,7 @@ pip install -r requirements.txt
 3. Configure a API do Gmail:
 Para usar a API do Gmail, você precisa obter um arquivo credentials.json.
 
-    Vá para o Console de Desenvolvedores do Google.
+    Vá para o Console de [Desenvolvedores do Google](https://console.cloud.google.com/).
 
     Crie um novo projeto.
 
