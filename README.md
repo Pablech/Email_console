@@ -113,5 +113,5 @@ Este projeto está sob a licença MIT.
 ---
 
 Desenvolvido por [Pablech](https://github.com/Pablech)
-E-mail pablech@proton.me
+E-mail [Pablech](pablech@proton.me)
 
