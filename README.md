@@ -81,7 +81,7 @@ Para usar a API do Gmail, você precisa obter um arquivo credentials.json.
    ou
    python3 main.py
 
-   Na primeira execução, o aplicativo pedirá a senha do seu usuário root do MySQL para se conectar e criar o banco de dados e as tabelas necessárias automaticamente. Em seguida, iniciará o processo de autenticação com a API do Google. Uma janela do navegador será aberta para que você autorize o acesso à sua conta do Gmail.
+   Na primeira execução, o aplicativo pedirá a senha do seu usuário root do MySQL para se conectar e criar o banco de dados e as tabelas necessárias automaticamente (DESENVOLVIDO E TESTADO COM MariaDB). Em seguida, iniciará o processo de autenticação com a API do Google. Uma janela do navegador será aberta para que você autorize o acesso à sua conta do Gmail.
 
 Como Usar
 
