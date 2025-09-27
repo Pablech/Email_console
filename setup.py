@@ -13,6 +13,11 @@ setup(
         'requests>=2.0.0',
         'email-validator>=2.0.0',
         'python-dotenv>=1.0.0',
+        'mysql-connector-python>=8.0.0',
+        'google-api-python-client>=2.0.0',
+        'google-auth-oauthlib>=1.0.0',
+        'google-auth-httplib2>=0.1.0',
+        'bcrypt>=4.0.0',
     ],
     python_requires='>=3.6',
     classifiers=[
