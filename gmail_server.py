@@ -207,7 +207,7 @@ class Email_Cache:
             destinatario=email_data.destinatario,
             data=email_data.data,
             corpo_email=email_data.corpo_texto if email_data.corpo_texto else
-            f'<pre>{email_data.data}</pre>'
+            f'<pre>{email_data.corpo_html}</pre>'
         )
 
         # Se houver anexos, adiciona a seção de anexos ao HTML.
