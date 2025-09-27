@@ -369,7 +369,7 @@ class EmailClient:
         self.__cache_class = None
         self.__email_class = email
         # Define o endereço de e-mail do remetente.
-        self.__email_remetente = 'padagoec@gmail.com'
+        self.__email_remetente = '' # Coloque seu endereço de e-mail aqui
 
     def set_cache_clas(self, cache):
         """
