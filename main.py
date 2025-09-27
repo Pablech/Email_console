@@ -25,6 +25,10 @@ def imprime_emails(buscados):
         # Calcula o índice de início e fim da página atual
         inicio = pag_atual * tam_pag
         fim = inicio + tam_pag
+        # Verifica se há e-meils encontrados
+        if not buscados:
+            return 
+
 
         exibir = buscados[inicio:fim]
 
