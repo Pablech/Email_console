@@ -56,6 +56,11 @@ def imprime_emails(buscados):
                     print('\a\nJá está na primeira página\n')
             elif comando == 'show':
                 index = entrada.indice
+                try:
+                    index = int(index)
+                except ValueError:
+                    print(f'Error: {index} inválido')
+                    continue
                 # Converte o índice exibido para o índice real na lista 'buscados'
                 real_i = inicio + index - 1
                 if 0 <= real_i < len(buscados):
@@ -174,6 +179,11 @@ def main(cache, client, db_instance, entrada):
             elif comando == 'search':
                 query = entrada.query
                 limite = entrada.limite
+                try:
+                    limite = int(limite)
+                except ValueError:
+                    print(f'Error: {limite} inválido')
+                    continue
                 buscados = cache.search_emails(limite, query)
                 imprime_emails(buscados)
             elif comando == 'help':
