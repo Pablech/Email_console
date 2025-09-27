@@ -33,16 +33,14 @@ Instalação
 Siga estes passos para configurar e rodar o projeto:
 
 1. Clone o repositório:
-Bash
+    Bash
+    
+    git clone https://github.com/Pablech/Email_console
 
-git clone https://github.com/Pablech/Email_console
-cd Email_console
-
-2. Instale as dependências do Python:
-Bash
-
-pip install -r requirements.txt
-
+2. Accese ao diretório:
+   Bash
+   
+   cd Email_console
 
 3. Configure a API do Gmail:
 Para usar a API do Gmail, você precisa obter um arquivo credentials.json.
@@ -61,14 +59,29 @@ Para usar a API do Gmail, você precisa obter um arquivo credentials.json.
 
     Baixe o arquivo JSON e renomeie-o para credentials.json. Coloque-o no mesmo diretório dos seus arquivos de código.
 
-4. Execute o Aplicativo:
+4. Crie um ambiente virtual:
+   Bash
 
-Execute o script principal:
-Bash
+   python -m venv .venv
 
-python main.py
+5. Ative o ambiente virtual:
+   Bash
 
-Na primeira execução, o aplicativo pedirá a senha do seu usuário root do MySQL para se conectar e criar o banco de dados e as tabelas necessárias automaticamente. Em seguida, iniciará o processo de autenticação com a API do Google. Uma janela do navegador será aberta para que você autorize o acesso à sua conta do Gmail.
+   source .venv/bin/activate
+
+6. Instale as dependências do Python:
+   Bash
+
+   pip install -r requirements.txt
+
+7. Inicie o programa:
+   Bash
+
+   python main.py
+   ou
+   python3 main.py
+
+   Na primeira execução, o aplicativo pedirá a senha do seu usuário root do MySQL para se conectar e criar o banco de dados e as tabelas necessárias automaticamente. Em seguida, iniciará o processo de autenticação com a API do Google. Uma janela do navegador será aberta para que você autorize o acesso à sua conta do Gmail.
 
 Como Usar
 
