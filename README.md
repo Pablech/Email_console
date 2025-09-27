@@ -96,8 +96,22 @@ O aplicativo funciona através de comandos de linha. Use a tecla TAB para autoco
 
     show= <número>: Abre um e-mail específico. O número corresponde à posição na lista exibida.
 
-    next / prev: Navega entre as páginas de resultados da busca.
+    next= / prev=: Navega entre as páginas de resultados da busca.
 
-    help: Exibe uma lista de todos os comandos disponíveis.
+    help=: Exibe uma lista de todos os comandos disponíveis.
 
-    quik: Encerra o programa de forma segura a qualquer momento.
+    quik=: Encerra o programa de forma segura a qualquer momento.
+
+## Contribuição
+
+Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias ou correções!
+
+## Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+Desenvolvido por [Pablech](https://github.com/Pablech)
+E-mail pablech@proton.me
+
