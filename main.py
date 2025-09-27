@@ -62,9 +62,9 @@ def imprime_emails(buscados):
                     print(f'Error: {index} inválido')
                     continue
                 # Converte o índice exibido para o índice real na lista 'buscados'
-                real_i = inicio + index - 1
-                if 0 <= real_i < len(buscados):
-                    cache.open_html(buscados[real_i])
+                index = index - 1
+                if 0 <= index < len(buscados):
+                    cache.open_html(buscados[index])
                 else:
                     print('\a\nIndex error\n')
             elif comando == 'help':
