@@ -62,7 +62,7 @@ Para usar a API do Gmail, você precisa obter um arquivo credentials.json.
 4. Crie um ambiente virtual:
    Bash
 
-   python -m venv .venv
+   python -m venv .venv ou python3 -m venv .venv
 
 5. Ative o ambiente virtual:
    Bash
