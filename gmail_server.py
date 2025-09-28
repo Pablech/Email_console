@@ -304,7 +304,7 @@ class Email_Cache:
             return temp_list
         return []
 
-    def search_emails(self, limit, query='is:unread'):
+    def search_emails(self, limit, query='label:unread'):
         """
         Método principal para buscar e-mails.
 
@@ -312,7 +312,7 @@ class Email_Cache:
         remotamente (na API do Gmail).
 
         Args:
-            query (str, opcional): A string de busca. O padrão é is:unread.
+            query (str, opcional): A string de busca. O padrão é label:unread.
             limit (int, opcional): O limite de busca. O padrão é 50
 
         Returns:
@@ -321,7 +321,7 @@ class Email_Cache:
         """
         # Lógica para decidir o tipo de busca.
         # Se a query for 'is:unread', busca diretamente na API.
-        if query == 'is:unread':
+        if query == 'label:unread':
             temp_list = self.__search_in_gmail_and_save(query, limit)
         # Se a query já foi usada antes, busca no cache.
         elif query in self.__querys_list:
