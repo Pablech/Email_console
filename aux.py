@@ -296,6 +296,9 @@ class Entrada:
         while True:
             try:
                 self.__entrada = input(mensagem)
+                if self.__entrada == 'S':
+                    self.__comando = 'S'
+                    return
                 # Chama a função para filtrar a entrada
                 self.__filtra_entrada()
                 break
@@ -401,7 +404,7 @@ class Entrada:
         ajuda = (
             '\nsend= {email@1 email@2} (1 ou mais) ass= OPCIONAL msg= OPCIONAL file= caminho para o arquivo OPCIONAL\n'
             '\nshow= {N} (N é o indice do email a ser aberto)\n'
-            '\nsearch= query de busca gmail ex: is:uread (para não lidos) limit= N limite de busca OPCIONAL (padrão 50)\n'
+            '\nsearch= query de busca gmail ex: label:uread (para não lidos) limit= N limite de busca OPCIONAL (padrão 50)\n'
             '\nuser= {usuario}\n'
             '\n{campos obrigatórios}\n'
             '\nprev= página previa de exibição\n'
