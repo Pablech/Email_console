@@ -165,12 +165,14 @@ def main(cache, client, db_instance, entrada):
                     ass = entrada.assunto
                     msg = entrada.mensagem
                     arqvs = entrada.arquivos
-                    msgs = client.write_email(para, ass, msg, arqvs)
-                    send = input(
-                        f'Mensagem:\npara: {para}\nassunto: {ass}\nmensagem: {msg}\narquivos: {arqvs}\n(S/*): ').strip()
-                    if send == 'S':
+                    entrada.entrada(f'Enviar?\npara: {para}\nassunto: {ass}\nmensagem: {msg}\narquivos: {arqvs}\n(S/*): ')
+                    comando = entrada.comando
+                    if comando == 'S':
+                        msgs = client.write_email(para, ass, msg, arqvs)
                         db_instance.salva_contatos(para)
                         client.send_email(msgs)
+                    else:
+                        print('Cancelada')
                 else:
                     print('\aDestinatário nescesário')
             elif comando == 'search':
