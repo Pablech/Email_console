@@ -301,7 +301,7 @@ class Email_Cache:
 
         # Retorna a lista de e-mails encontrados ou uma lista vazia.
         if temp_list:
-            return temp_list
+            return sorted(temp_list, key=lambda data: data['data'])
         return []
 
     def search_emails(self, limit, query='label:unread'):
