@@ -281,8 +281,8 @@ class Entrada:
             arquivos_str = args.get('file', '')
             if arquivos_str:
                 self.__arquivos = [f.rstrip('/') for f in arquivos_str.split()]
-            else:
-                self.__comando = None
+        else:
+            self.__comando = None
 
     def entrada(self, mensagem: str):
         """
