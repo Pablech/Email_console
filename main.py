@@ -167,7 +167,6 @@ def main(cache, client, db_instance, entrada):
                     ass = entrada.assunto
                     msg = entrada.mensagem
                     arqvs = entrada.arquivos
-                    print(para, ass, msg, arqvs)
                     msgs = client.write_email(para, ass, msg, arqvs)
                     send = input(
                         f'Mensagem:\npara: {para}\nassunto: {ass}\nmensagem: {msg}\narquivos: {arqvs}\n(S/*): ').strip()
@@ -190,6 +189,8 @@ def main(cache, client, db_instance, entrada):
                 entrada.ajuda()
             else:
                 print(f'\nComando <{comando}> incorreto')
+        else:
+            print('Nada a fazer...')
 
 
 if __name__ == '__main__':
