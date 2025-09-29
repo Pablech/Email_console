@@ -4,8 +4,6 @@ import aux
 import data_base
 import gmail_server
 
-de = 'padagoec@gmail.com'
-
 
 def imprime_emails(buscados):
     """
@@ -204,7 +202,6 @@ if __name__ == '__main__':
     # Tenta o login ou a criação de usuário
     if login_ou_cadastro(db_instance, entrada):
         email = gmail_server.Email()
-        """esta com erro aqui"""
         cache = gmail_server.Email_Cache()
         client = gmail_server.EmailClient(email)
         cache.set_service(client)
