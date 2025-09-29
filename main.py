@@ -95,10 +95,6 @@ def valida_data_base():
             print(f'\nError: {error}')
 
 
-# Observação: Você deve garantir que seu módulo 'data_base'
-# levante as exceções do 'mysql.connector' ou equivalentes.
-
-
 def login_ou_cadastro(db_instance, entrada):
     """
     Gerencia o processo de login ou criação de novo usuário.
@@ -173,7 +169,7 @@ def main(cache, client, db_instance, entrada):
                     arqvs = entrada.arquivos
                     print(para, ass, msg, arqvs)
                     msgs = client.write_email(para, ass, msg, arqvs)
-                    send = input(
+                    send = input()
                         f'Mensagem:\npara: {para}\nassunto: {ass}\nmensagem: {msg}\narquivos: {arqvs}\n(S/*): ').strip()
                     if send == 'S':
                         db_instance.salva_contatos(para)
