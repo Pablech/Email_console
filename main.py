@@ -169,7 +169,7 @@ def main(cache, client, db_instance, entrada):
                     arqvs = entrada.arquivos
                     print(para, ass, msg, arqvs)
                     msgs = client.write_email(para, ass, msg, arqvs)
-                    send = input()
+                    send = input(
                         f'Mensagem:\npara: {para}\nassunto: {ass}\nmensagem: {msg}\narquivos: {arqvs}\n(S/*): ').strip()
                     if send == 'S':
                         db_instance.salva_contatos(para)
