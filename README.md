@@ -14,7 +14,7 @@ Funcionalidades
 
     Segurança de Login: Suas senhas são armazenadas com segurança usando o algoritmo de hash bcrypt.
 
-    Autocompletar Inteligente: Use a tecla TAB para autocompletar comandos e contatos, melhorando a produtividade.
+    Autocompletar Inteligente: Use a tecla TAB para autocompletar comandos, contatos e caminhos para arquivos, melhorando a produtividade.
 
     Armazenamento Local: Contatos e credenciais de login são salvos em um banco de dados MySQL para acesso rápido.
 
